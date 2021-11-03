@@ -1,2 +1,33 @@
 # monome-teletype
 various scenes for the monome teletype
+
+# scenes
+
+## generative-2track
+Generatively creates a main and related track, probabilistically updated
+at every step.
+* with disting EX connected, uses i2c to set RGrv_Bass Lng in multisample mode
+* not very melodic
+
+## generative-4track
+Lightly modified stock 4track scene
+* param knob introduces varying degrees of randomness into step tracking
+* CV 5 properly advances all tracks
+
+## numeric-repeater-tracker
+Trigger (and/or melody) generator which uses the numeric repeater function
+to advance tracker patterns rhythmically.
+* pattern index controls prime pattern
+* parameter 'x' sets pattern mask
+* param knob controls variation factor
+* triggers based on 'NR' function
+* CV based on notes set in the tracker
+* works well with disting EX in SD multisample mode or a drum machine
+
+# installation
+To install
+* copy the desired scene scripts to a flash device
+* rename the scene scripts to tt??s.txt
+* be careful not to use a tt??s.txt that would overwrite your own scenes
+* insert the flash device into you teletype 
+* scripts are transferred from the flash device to teletype on powerup

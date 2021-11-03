@@ -3,17 +3,6 @@ various scenes for the monome teletype
 
 # scenes
 
-## generative-2track
-Generatively creates a main and related track, probabilistically updated
-at every step.
-* with disting EX connected, uses i2c to set RGrv_Bass Lng in multisample mode
-* not very melodic
-
-## generative-4track
-Lightly modified stock 4track scene
-* param knob introduces varying degrees of randomness into step tracking
-* CV 5 properly advances all tracks
-
 ## numeric-repeater-tracker
 Trigger (and/or melody) generator which uses the numeric repeater function
 to advance tracker patterns rhythmically.
@@ -23,6 +12,18 @@ to advance tracker patterns rhythmically.
 * triggers based on 'NR' function
 * CV based on notes set in the tracker
 * works well with disting EX in SD multisample mode or a drum machine
+
+## generative-4track
+Lightly modified stock 4track scene
+* param knob introduces varying degrees of randomness into step tracking
+* CV input 5 properly advances all tracks
+
+## generative-2track
+Generatively creates a main and related track, probabilistically updated
+at every step.
+* with disting EX connected, uses i2c to set RGrv_Bass Lng in multisample mode
+* first pass at teletype scene creation
+* experimental. not very melodic.
 
 # installation
 To install

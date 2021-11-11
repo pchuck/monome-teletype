@@ -1,5 +1,8 @@
 # ignore generic device files
 tt??s.txt
 
+# ignore the default device files
+defaults/
+
 # ignore firmware
 *.hex

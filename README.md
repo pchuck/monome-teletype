@@ -3,6 +3,15 @@ various scenes for the monome teletype
 
 # scenes
 
+## random-cv-ansible-grid
+Random CV generator, with 8 channels of random voltages (using Ansible and Grid)
+* IN1 is clock for 1-8
+* outputs 1-4 range from 0-max voltage set by param knob
+* outputs 5-8 range from 0-5v
+* trigger 1-4: all, odd, div3, div4
+* trigger 5-8: probabilities 75%, 50%, 25%, 10%
+* outputs are quantized by scale set on init (I) page
+
 ## random-cv-ansible
 Random CV generator, with 8 channels of random voltages (using Ansible)
 * IN1 is clock for 1-4

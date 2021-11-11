@@ -3,6 +3,16 @@ various scenes for the monome teletype
 
 # scenes
 
+## random-cv-ansible
+Random CV generator, with 8 channels of random voltages (using Ansible)
+* IN1 is clock for 1-4
+* IN5 is clock for 5-8
+* outputs 1-4 range from 0-max voltage set by param knob
+* outputs 5-8 range from 0-5v
+* trigger 1-4: even, odd, div3, div4
+* trigger 5-8: probabilities 75%, 50%, 25% 10%
+* outputs are quantized by scale set on init (I) page
+
 ## numeric-repeater-tracker
 Trigger (and/or melody) generator which uses the numeric repeater function
 to advance tracker patterns rhythmically.

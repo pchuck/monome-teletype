@@ -3,6 +3,15 @@ various scenes for the monome teletype
 
 # scenes
 
+## firefly-grid
+Firefly swarm cv generator, with 8 channels of random computed voltages.
+Uses Ansible as an extension and Grid as a visualizer.
+* IN1 is clock for 1-8
+* outputs 1-8 are based on firefly activity
+* triggers 1-8 are variations of clock/divided
+* outputs are quantized by scale set on init (I) page
+* param knob controls octave range
+
 ## random-cv-ansible-grid
 Random CV generator, with 8 channels of random voltages (using Ansible and Grid)
 * IN1 is clock for 1-8

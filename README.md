@@ -3,7 +3,7 @@ various scenes for the monome teletype
 
 # scenes
 
-## firefly-grid
+## firefly-grid (17)
 Firefly swarm cv generator, with 8 channels of random computed voltages.
 Uses Ansible as an extension and Grid as a visualizer.
 * IN1 is clock for 1-8
@@ -12,7 +12,18 @@ Uses Ansible as an extension and Grid as a visualizer.
 * outputs are quantized by scale set on init (I) page
 * param knob controls octave range
 
-## random-cv-ansible-grid
+## fader-grid (16)
+* TR 1-8: on fader level change
+* CV 1-8: fader level
+
+## krell-w-crow (14)
+Krell generates random notes on teletype, with crow producing envelopes.
+* IN1-IN4 are clock
+* outputs 1-4 are random chromatic notes
+* triggers 1-4 are probabilistic gates based on param knob position
+* crow outputs 1-4 are random envelops
+
+## random-cv-ansible-grid (13)
 Random CV generator, with 8 channels of random voltages (using Ansible and Grid)
 * IN1 is clock for 1-8
 * outputs 1-4 range from 0-max voltage set by param knob
@@ -20,6 +31,18 @@ Random CV generator, with 8 channels of random voltages (using Ansible and Grid)
 * trigger 1-4: all, odd, div3, div4
 * trigger 5-8: probabilities 75%, 50%, 25%, 10%
 * outputs are quantized by scale set on init (I) page
+
+## generative-4track (12)
+Lightly modified stock 4track scene
+* param knob introduces varying degrees of randomness into step tracking
+* CV input 5 properly advances all tracks
+
+## generative-2track (11)
+Generatively creates a main and related track, probabilistically updated
+at every step.
+* with disting EX connected, uses i2c to set RGrv_Bass Lng in multisample mode
+* first pass at teletype scene creation
+* experimental. not very melodic.
 
 ## random-cv-ansible
 Random CV generator, with 8 channels of random voltages (using Ansible)
@@ -41,17 +64,19 @@ to advance tracker patterns rhythmically.
 * CV based on notes set in the tracker
 * works well with disting EX in SD multisample mode or a drum machine
 
-## generative-4track
-Lightly modified stock 4track scene
-* param knob introduces varying degrees of randomness into step tracking
-* CV input 5 properly advances all tracks
+## factory installed and other
+## generative melodies v0 (10)
+## jumpy edges (9)
+## test (8)
+## earthsea remote (7)
+## meadowphysics remote (6)
+## white whale remote (5)
+## mood ring (4)
+## 4 track (3)
+## hidden path no path (2)
+## randoms (1)
+## triangle mountain (0)
 
-## generative-2track
-Generatively creates a main and related track, probabilistically updated
-at every step.
-* with disting EX connected, uses i2c to set RGrv_Bass Lng in multisample mode
-* first pass at teletype scene creation
-* experimental. not very melodic.
 
 # installation
 To install

@@ -16,6 +16,11 @@ Uses Ansible as an extension and Grid as a visualizer.
 * TR 1-8: on fader level change
 * CV 1-8: fader level
 
+## generative-chords
+* IN1 is clock
+* outputs 1-4 are random degrees of a chord selected by the param knob
+* triggers 1-4 are probabilistic gates (1: 100%, 2:75%, 3:50%, 4:25%)
+
 ## krell-w-crow (14)
 Krell generates random notes on teletype, with crow producing envelopes.
 * IN1-IN4 are clock

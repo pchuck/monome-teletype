@@ -24,6 +24,8 @@ Uses Ansible as an extension and Grid as a visualizer.
 * triggers 5-8 are clock divided deterministic gates (/1, /2, /3, /4)
 * crow outputs 1-4 are generative envelopes influenced by the clock rate
 * patch notes
+  * clock is internally generated
+  * (optional) external clock to in 1 and set last fader on grid to 0
   * teletype cv outputs 1/2/3 to v/oct inputs of chainsaw
   * teletype cv outputs 5/6 to chainsaw detune and wave inputs
   * crow outputs 1/2 to vca 1/2 level controls
@@ -33,7 +35,11 @@ Uses Ansible as an extension and Grid as a visualizer.
   * crow output 3 to stereo filter cutoff
   * stereo reverb outputs l/r to master output
 * performance notes
-  * vary the metronome freq w/ divisions, eg. 'm 1000', 'm 500', 'm 250'
+  * clock is internal by default
+  * use the last fader on grid to control the clock frequency
+  * to use an external clock, set the last fader to position 0
+  * or, set the metronome period, eg. 'm 1000', 'm 500', 'm 250'
+  * use grid to control octave range of the 4 outs
   * vary the stereo filter master cutoff
   
 ## krell-w-crow (14)

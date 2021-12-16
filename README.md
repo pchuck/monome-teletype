@@ -16,7 +16,7 @@ Uses Ansible as an extension and Grid as a visualizer.
 * TR 1-8: on fader level change
 * CV 1-8: fader level
 
-## chord-flow-gen (15)
+## chord-flow-gen-grid (15)
 * IN1 is clock
 * outputs 1-4 are v/oct, generative degrees of a chord selected by param knob
 * triggers 1-4 are gates, probabilistic (1: 100%, 2:75%, 3:50%, 4:25%)

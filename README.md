@@ -23,7 +23,16 @@ Uses Ansible as an extension and Grid as a visualizer.
 * outputs 5-8 are modulation, random voltages (0-1v,1v,5v,5v)
 * triggers 5-8 are clock divided deterministic gates (/1, /2, /3, /4)
 * crow outputs 1-4 are generative envelopes influenced by the clock rate
-
+* patch notes
+  * teletype cv outputs 1/2/3 to v/oct inputs of chainsaw
+  * teletype cv outputs 5/6 to chainsaw detune and wave inputs
+  * crow outputs 1/2 to vca 1/2 level controls
+  * chainsaw stereo outputs to vca 1/2 inputs
+  * vca 1/2 outputs to stereo filter input l/r
+  * stereo filter ouputs l/r to stereo reverb inputs l/r
+  * crow output 3 to stereo filter cutoff
+  * stereo reverb outputs l/r to master output
+  
 ## krell-w-crow (14)
 Krell generates random notes on teletype, with crow producing envelopes.
 * IN1-IN4 are clock

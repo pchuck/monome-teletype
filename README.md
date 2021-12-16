@@ -32,6 +32,9 @@ Uses Ansible as an extension and Grid as a visualizer.
   * stereo filter ouputs l/r to stereo reverb inputs l/r
   * crow output 3 to stereo filter cutoff
   * stereo reverb outputs l/r to master output
+* performance notes
+  * vary the metronome freq w/ divisions, eg. 'm 1000', 'm 500', 'm 250'
+  * vary the stereo filter master cutoff
   
 ## krell-w-crow (14)
 Krell generates random notes on teletype, with crow producing envelopes.

@@ -35,11 +35,10 @@ Uses Ansible as an extension and Grid as a visualizer.
   * crow output 3 to stereo filter cutoff
   * stereo reverb outputs l/r to master output
 * performance notes
-  * clock is internal by default
+  * clock is internal by default. for external clock, comment out '$ 1' in M
   * use the last fader on grid to control the clock frequency
+  * or, with last fader set to 0, set the metronome period, eg. 'm 1000'
   * use second to last fader to control magnitude of 3rd/4th envelopes (filter)
-  * to use an external clock, set the last fader to position 0
-  * or, set the metronome period, eg. 'm 1000', 'm 500', 'm 250'
   * use first four grid faders to control octave range of the 4 outs
   * vary the stereo filter master cutoff
   

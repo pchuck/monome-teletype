@@ -3,9 +3,16 @@ various scenes for the monome teletype
 
 # scenes
 
+## chord-flow-dyn-grid (20)
+Same as chord-flow-gen-grid, but instead of supporting external or
+internal clock, all clock is internal. The tempo ebbs and flows dynamically,
+producing four channels of chord-based melody, envelopes (crow) and
+modulation (ansible). Supports grid.
+
 ## firefly-grid (17)
 Firefly swarm cv generator, with 8 channels of random computed voltages.
 Uses Ansible as an extension and Grid as a visualizer.
+
 * IN1 is clock for 1-8
 * outputs 1-8 are based on firefly activity
 * triggers 1-8 are variations of clock/divided
@@ -13,10 +20,17 @@ Uses Ansible as an extension and Grid as a visualizer.
 * param knob controls octave range
 
 ## fader-grid (16)
+A grid-based fader.
+
 * TR 1-8: on fader level change
 * CV 1-8: fader level
 
 ## chord-flow-gen-grid (15)
+A generative machine that generates four channels of dynamic
+chord-based melody, (with crow) two channels of envelopes, and
+(with ansible) four channels of modulation. Grid is used to steer
+the ship.
+
 * IN1 is clock
 * outputs 1-4 are v/oct, generative degrees of a chord selected by param knob
 * triggers 1-4 are gates, probabilistic (1: 100%, 2:75%, 3:50%, 4:25%)
@@ -47,6 +61,14 @@ Uses Ansible as an extension and Grid as a visualizer.
   * to re-initialize the tracker (and track lengths): 'INIT.P.ALL'
   * set DRUNK.MIN to higher values to soften attack (init default: 1)
   * set O.MIN to lengthen decay (init default: 2)
+* page notes
+  * 5 - triggers every m/clock
+      updates grid note tracks
+  * 6 - triggers every 2 m/clock
+  * 7 - triggers every 3 m/clock
+  * 8 - triggers every 4 m/clock
+      sets note octave offsets based on grid faders
+      tracks time / clock period (z)
   
 ## krell-w-crow (14)
 Krell generates random notes on teletype, with crow producing envelopes.
@@ -57,6 +79,7 @@ Krell generates random notes on teletype, with crow producing envelopes.
 
 ## random-cv-ansible-grid (13)
 Random CV generator, with 8 channels of random voltages (using Ansible and Grid)
+
 * IN1 is clock for 1-8
 * outputs 1-4 range from 0-max voltage set by param knob
 * outputs 5-8 range from 0-5v
@@ -66,18 +89,21 @@ Random CV generator, with 8 channels of random voltages (using Ansible and Grid)
 
 ## generative-4track (12)
 Lightly modified stock 4track scene
+
 * param knob introduces varying degrees of randomness into step tracking
 * CV input 5 properly advances all tracks
 
 ## generative-2track (11)
 Generatively creates a main and related track, probabilistically updated
 at every step.
+
 * with disting EX connected, uses i2c to set RGrv_Bass Lng in multisample mode
 * first pass at teletype scene creation
 * experimental. not very melodic.
 
 ## random-cv-ansible
 Random CV generator, with 8 channels of random voltages (using Ansible)
+
 * IN1 is clock for 1-4
 * IN5 is clock for 5-8
 * outputs 1-4 range from 0-max voltage set by param knob
@@ -89,12 +115,14 @@ Random CV generator, with 8 channels of random voltages (using Ansible)
 ## numeric-repeater-tracker
 Trigger (and/or melody) generator which uses the numeric repeater function
 to advance tracker patterns rhythmically.
+
 * pattern index controls prime pattern
 * parameter 'x' sets pattern mask
 * param knob controls variation factor
 * triggers based on 'NR' function
 * CV based on notes set in the tracker
 * works well with disting EX in SD multisample mode or a drum machine
+
 
 ## factory installed and other
 ## generative melodies v0 (10)

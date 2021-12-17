@@ -37,9 +37,10 @@ Uses Ansible as an extension and Grid as a visualizer.
 * performance notes
   * clock is internal by default
   * use the last fader on grid to control the clock frequency
+  * use second to last fader to control magnitude of 3rd/4th envelopes (filter)
   * to use an external clock, set the last fader to position 0
   * or, set the metronome period, eg. 'm 1000', 'm 500', 'm 250'
-  * use grid to control octave range of the 4 outs
+  * use first four grid faders to control octave range of the 4 outs
   * vary the stereo filter master cutoff
   
 ## krell-w-crow (14)

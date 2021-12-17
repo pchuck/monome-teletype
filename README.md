@@ -35,12 +35,18 @@ Uses Ansible as an extension and Grid as a visualizer.
   * crow output 3 to stereo filter cutoff
   * stereo reverb outputs l/r to master output
 * performance notes
-  * clock is internal by default. for external clock, comment out '$ 1' in M
+  * clock is internal by default
+  * for external clock, click the grid button (or, G.BTN.V 1 0)
   * use the last fader on grid to control the clock frequency
-  * or, with last fader set to 0, set the metronome period, eg. 'm 1000'
+  * or, with last fader set to 0, set the metronome period, eg. 'M 1000'
   * use second to last fader to control magnitude of 3rd/4th envelopes (filter)
-  * use first four grid faders to control octave range of the 4 outs
+  * use first set of four faders to control octave offset of the 4 outs
+  * use second set of four faders to control octave range of the 4 outs
   * vary the stereo filter master cutoff
+  * to see a history in tracker of notes generated: 'L 0 3: PN.L I 16'
+  * to re-initialize the tracker (and track lengths): 'INIT.P.ALL'
+  * set DRUNK.MIN to higher values to soften attack (init default: 1)
+  * set O.MIN to lengthen decay (init default: 2)
   
 ## krell-w-crow (14)
 Krell generates random notes on teletype, with crow producing envelopes.

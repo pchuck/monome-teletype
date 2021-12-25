@@ -9,6 +9,9 @@ internal clock, all clock is internal. The tempo ebbs and flows dynamically,
 producing four channels of chord-based melody, envelopes (crow) and
 modulation (ansible). Supports grid.
 
+## melodicer (19)
+Melodicer inspired tracker with ansible and crow support.
+
 ## firefly-grid (17)
 Firefly swarm cv generator, with 8 channels of random computed voltages.
 Uses Ansible as an extension and Grid as a visualizer.

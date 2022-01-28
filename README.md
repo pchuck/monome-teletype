@@ -3,6 +3,45 @@ various scenes for the monome teletype
 
 # scenes
 
+## smooth-flow-grid (21)
+Another generative machine.
+
+* IN
+  * 1: clock
+  * grid: faders: base octave, octave range, release
+  * param: influences random note probability
+* OUT
+  * TR 1-4: /1, /2, /4, /8 frequency
+  * CV 1-4: V/OCT (GENERATIVE)
+  * TR 5-8: CLK / (DETERMINISTIC)
+  * CV   5: ARPEGGIO
+  * CV 6-8: MODULATION OUT
+  * CROW OUT 1-4: ENVELOPES
+* NOTES
+  * J IS RANDOM OCTAVE MULTIPLIER
+  * K IS DECAY (based on fader and clock)
+  * X IS attack (influenced by fader)
+  * Z IS chord (0-12)
+  * A/B/C/D - clock period for decay (outs 1-4)
+  * O IS for arpeggios
+  * Y is unused
+  * T is time period of clock
+  * R is random, degree of chord
+  * DRUNK INFLUENCES ATTACK
+* TIPS
+  * faders
+    * fader 1/5/9/13 - controls base octave offset (tt outputs 1-5)
+    * fader 2/6/10/14 - controls octave range (tt outputs 1-4)
+    * fader 3/7/11/15 - controls release time (crow outputs 1-4)
+    * fader 4/8/12/16 - unused
+    * fader 18 - controls global attack time (crow outputs 1-4)
+* patch
+  * tt outputs 2 or 5 (and also 1 or 3) to chainsaw
+  * crow outputs 1 or 2 to VCA for chainsaw
+  * tt output 4 to plaits
+  * crow output 4 to VCA for plaits
+  * tt outputs 6 and 7 to chainsaw detune and waveform
+
 ## chord-flow-dyn-grid (20)
 Same as chord-flow-gen-grid, but instead of supporting external or
 internal clock, all clock is internal. The tempo ebbs and flows dynamically,

@@ -3,6 +3,10 @@ various scenes for the monome teletype
 
 # scenes
 
+## arp-flow-grid (22)
+(in progress)
+Based on smooth-flow-grid, generative arpeggiator.
+
 ## smooth-flow-grid (21)
 Another generative machine.
 

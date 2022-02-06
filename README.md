@@ -3,12 +3,49 @@ various scenes for the monome teletype
 
 # scenes
 
+## chord-dyn-machine (24)
+Based on smooth-flow-grid, another generative machine.
+Evolving, repeating patterns.
+
+* IN
+  * 1: clock
+  * grid: base oct, range, mutate, length, decay
+  * param: influences random note probability
+
+* OUT
+  * TR 1-4: /1, /2, /4, /8 frequency (generative)
+  * CV 1-4: V/OCT (GENERATIVE, REPEATING)
+  * TR 5-8: /1, /2, /4, /8 frequency (DETERMINISTIC)
+  * CV   5: ARPEGGIO
+  * CV 6-8: QUANTIZED MODULATION, 1/1/2/5V RANGE
+  * CROW OUT 1-4: ENVELOPES
+
+* NOTES
+  * J - root note helper
+  * K - frequency of mutation
+  * X - global attack factor
+  * Y - degree for chords (channel 5 out)
+  * Z - scale (0-8)
+  * A/B/C/D - local decay factor
+  * O - grid output position
+  * T is time period of clock
+  * R - random, degree of scale (1-7)
+  * DRUNK - INFLUENCES ATTACK
+
+* TIPS
+  * fader 1/ 6/11 - controls base octave offset (tt outputs 1-3)
+  * fader 2/ 7/12 - controls octave range (tt outputs 1-3)
+  * fader 3/ 8/13 - controls release time (crow outputs 1-3)
+  * fader 4/ 9/14 - controls pattern length
+  * fader 5/10/15 - controls decay time
+  * fader 16 - controls global attack time (crow outputs 1-4)
+
 ## arp-flow-grid (22)
 (in progress)
 Based on smooth-flow-grid, generative arpeggiator.
 
 ## smooth-flow-grid (21)
-Another generative machine.
+Another generative machine. Constantly evolving patterns.
 
 * IN
   * 1: clock

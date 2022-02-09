@@ -3,19 +3,23 @@ various scenes for the monome teletype
 
 # scenes
 
+## chord-dyn-machine *experimental* (23)
+(in progress)
+Same as 24, but reworked into a vertical tracking ui.
+    
 ## chord-dyn-machine (24)
 Based on smooth-flow-grid, another generative machine.
 Evolving, repeating patterns.
 
 * IN
   * 1: clock
-  * grid: base oct, range, mutate, length, decay
+  * grid: mutation rate, pattern length, base octave, range, attack, decay
   * param: influences random note probability
 
 * OUT
-  * TR 1-4: /1, /2, /4, /8 frequency (generative)
+  * TR 1-4: /1, /2, /8, /16 frequency (generative)
   * CV 1-4: V/OCT (GENERATIVE, REPEATING)
-  * TR 5-8: /1, /2, /4, /8 frequency (DETERMINISTIC)
+  * TR 5-8: /1, /2, /8, /16 frequency (DETERMINISTIC)
   * CV   5: ARPEGGIO
   * CV 6-8: QUANTIZED MODULATION, 1/1/2/5V RANGE
   * CROW OUT 1-4: ENVELOPES
@@ -28,17 +32,19 @@ Evolving, repeating patterns.
   * Z - scale (0-8)
   * A/B/C/D - local decay factor
   * O - grid output position
+  * Q - stores current 'O'
   * T is time period of clock
   * R - random, degree of scale (1-7)
-  * DRUNK - INFLUENCES ATTACK
+  * DRUNK - INFLUENCES PROBABILITY
 
 * TIPS
-  * fader 1/ 6/11 - controls base octave offset (tt outputs 1-3)
-  * fader 2/ 7/12 - controls octave range (tt outputs 1-3)
-  * fader 3/ 8/13 - controls release time (crow outputs 1-3)
-  * fader 4/ 9/14 - controls pattern length
-  * fader 5/10/15 - controls decay time
-  * fader 16 - controls global attack time (crow outputs 1-4)
+  * fader 1/5/ 9/13    - controls mutation length
+  * fader 2/6/10/14 - controls pattern length
+  * fader 3/7/11/15 - controls base octave offset
+  * fader 4/8/12/16 - controls octave range
+  * fader 17 - control global attack time
+  * fader 18 - controls global decay time
+
 
 ## arp-flow-grid (22)
 (in progress)

@@ -3,13 +3,34 @@ various scenes for the monome teletype
 
 # scenes
 
-## chord-dyn-machine *experimental* (23)
-(in progress)
+## arp-dyn-machine *experimental* (23)
 Same as 24, but reworked into a vertical tracking ui.
+Greater level of parameter controls and unique UI layout:
+
+```
+fader grid layout            p*                             p*
+  ch1                        a*  ch2                        a*
+  octave  pattern  envelope  t*  octave  pattern  envelope  t*
+   ---     ---      ---      t*   ---     ---      ---      t*
+    1       2        3       e*    5       6        7       e*
+  base    mutate   decay     r*  base    mutate   decay     r*    ...
+   17      18       19       n*   21      22       23       n*
+  range   patlen   attack    #*  range   patlen   attack    #*
+                             1*                             2*
+```
+                             
+TIPS
+  * fader 1/5/ 9/13 - controls mutation length
+  * fader 2/6/10/14 - controls pattern length
+  * fader 3/7/11/15 - controls base octave offset
+  * fader 4/8/12/16 - controls octave range
+  * fader 17 - control global attack time
+  * fader 18 - controls global decay time
+
     
-## chord-dyn-machine (24)
+## arp-dyn-machine (24)
 Based on smooth-flow-grid, another generative machine.
-Evolving, repeating patterns.
+Evolving, repeating patterns. 
 
 * IN
   * 1: clock
@@ -38,17 +59,12 @@ Evolving, repeating patterns.
   * DRUNK - INFLUENCES PROBABILITY
 
 * TIPS
-  * fader 1/5/ 9/13    - controls mutation length
+  * fader 1/5/ 9/13 - controls mutation length
   * fader 2/6/10/14 - controls pattern length
   * fader 3/7/11/15 - controls base octave offset
   * fader 4/8/12/16 - controls octave range
   * fader 17 - control global attack time
   * fader 18 - controls global decay time
-
-
-## arp-flow-grid (22)
-(in progress)
-Based on smooth-flow-grid, generative arpeggiator.
 
 ## smooth-flow-grid (21)
 Another generative machine. Constantly evolving patterns.

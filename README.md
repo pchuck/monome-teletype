@@ -18,15 +18,6 @@ fader grid layout            p*                             p*
   range   patlen   attack    #*  range   patlen   attack    #*
                              1*                             2*
 ```
-                             
-TIPS
-  * fader 1/5/ 9/13 - controls mutation length
-  * fader 2/6/10/14 - controls pattern length
-  * fader 3/7/11/15 - controls base octave offset
-  * fader 4/8/12/16 - controls octave range
-  * fader 17 - control global attack time
-  * fader 18 - controls global decay time
-
     
 ## arp-dyn-machine (24)
 Based on smooth-flow-grid, another generative machine.
@@ -46,25 +37,29 @@ Evolving, repeating patterns.
   * CROW OUT 1-4: ENVELOPES
 
 * NOTES
-  * J - root note helper
-  * K - frequency of mutation
-  * X - global attack factor
+  * J - root note helper for base octave; also temp random channel index
+  * K - temp current note value per channel
+  * O - grid 'X' note output position
+  * X - persistent store for O
   * Y - degree for chords (channel 5 out)
   * Z - scale (0-8)
-  * A/B/C/D - local decay factor
-  * O - grid output position
-  * Q - stores current 'O'
-  * T is time period of clock
+  * T - time period of clock /4, used to vary envelope times
   * R - random, degree of scale (1-7)
+  * A - global attack factor
+  * D - global decay time
+  * B - helper to store fader 13 (ch 4 mutation length)
+  * C - not used
+
   * DRUNK - INFLUENCES PROBABILITY
 
 * TIPS
-  * fader 1/5/ 9/13 - controls mutation length
-  * fader 2/6/10/14 - controls pattern length
-  * fader 3/7/11/15 - controls base octave offset
-  * fader 4/8/12/16 - controls octave range
-  * fader 17 - control global attack time
-  * fader 18 - controls global decay time
+  * fader 1/5/ 9/13 - controls CH1-4 mutation length
+  * fader 2/6/10/14 - controls CH1-4 pattern length
+  * fader 3/7/11/15 - controls CH1-4 base octave offset
+  * fader 4/8/12/16 - controls CH1-4 octave range
+  * fader 17 - controls global scale (0-8)
+  * fader 18 - controls global attack time
+  * fader 19 - controls global decay time
 
 ## smooth-flow-grid (21)
 Another generative machine. Constantly evolving patterns.

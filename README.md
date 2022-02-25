@@ -41,16 +41,17 @@ fader grid layout
    4  decay base
    5  decay variation
    6  clock division
-   7  n/a
+ ---
    8  root/octave - out 1
    9  root/octave - out 2
   10  root/octave - out 3
   11  root/octave - out 4
-  12  n/a
+ ---
   13  max random level (v) - out 5
   14  max random level (v) - out 6
   15  max random level (v) - out 7
   16  max random level (v) - out 8
+ ---
   17  (horizontal, hidden under visualizer) - track 1 length
   18  (horizontal, hidden under visualizer) - track 2 length
 ```

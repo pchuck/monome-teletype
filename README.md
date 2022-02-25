@@ -47,6 +47,12 @@ fader grid layout
   10  root/octave - out 3
   11  root/octave - out 4
   12  n/a
+  13  max random level (v) - out 5
+  14  max random level (v) - out 6
+  15  max random level (v) - out 7
+  16  max random level (v) - out 8
+  17  (horizontal, hidden under visualizer) - track 1 length
+  18  (horizontal, hidden under visualizer) - track 2 length
 ```
 
 ## arp-dyn-machine *experimental* (23)

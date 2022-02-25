@@ -3,6 +3,52 @@ various scenes for the monome teletype
 
 # scenes
 
+## dual-track-stereo-nb-machine (29)
+Repeating generative patterns based on N.BX feature.
+Dual generative tracker with dual stereo envelope pairs.
+Utilizes grid for visualization and fader controls. Crow to generate envelopes.
+
+* IN
+  * 1: CLOCK
+  * GRID FADERS: RNG, A/D, DIV, O 
+  * PARAM: INFLUENCES PROBABILITY
+
+* OUT
+  * TR 1/2: TRACK 1 TRIGGER
+  * CV 1: V/OCT GENERATIVE
+  * CV 2: V/OCT GENERATIVE (inversion)
+  * TR 3/4: TRACK 3 TRIGGER
+  * CV 3: V/OCT GENERATIVE
+  * CV 4: V/OCT GENERATIVE (inversion)
+  * TR 5-8: DIVISIONS
+  * CV 5-8: MODULATIONS
+  * CROW OUT: 1/2, 3/4 STEREO ENV
+
+* NOTES
+  * A/B: ATTACK L/R
+  * C/D: DECAY L/R
+  * R: A/D RANDOM VARIATION
+  * X: NEXT TRACKER VALUE
+  * Y: CURRENT CLOCK DIVISION
+  * Z: OUTPUT RANGE
+  * T: CLOCK PERIOD
+
+```
+fader grid layout
+   1  n/a
+   2  range - multiple of number of bitmask bits set
+   3  attack base
+   4  decay base
+   5  decay variation
+   6  clock division
+   7  n/a
+   8  root/octave - out 1
+   9  root/octave - out 2
+  10  root/octave - out 3
+  11  root/octave - out 4
+  12  n/a
+```
+
 ## arp-dyn-machine *experimental* (23)
 Same as 24, but reworked into a vertical tracking ui.
 Greater level of parameter controls and unique UI layout:
@@ -18,7 +64,6 @@ fader grid layout            p*                             p*
   range   patlen   attack    #*  range   patlen   attack    #*
                              1*                             2*
 ```
-    
 ## arp-dyn-machine (24)
 Based on smooth-flow-grid, another generative machine.
 Evolving, repeating patterns. 

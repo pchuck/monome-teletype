@@ -3,6 +3,10 @@ various scenes for the monome teletype
 
 # scenes
 
+## gen-flow-friends (31)
+Generative machine to drive Just Friends over I2C.
+Utilizes the tracker and grid to control melody and randomization.
+
 ## dual-track-stereo-nb-machine (29)
 Repeating generative patterns based on N.BX feature.
 Dual generative tracker with dual stereo envelope pairs.

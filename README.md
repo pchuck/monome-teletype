@@ -7,6 +7,39 @@ various scenes for the monome teletype
 Generative machine to drive Just Friends over I2C.
 Utilizes the tracker and grid to control melody and randomization.
 
+* IN
+  * 1: CLOCK
+  * GRID BUTTONS: 4X MUTATE, SHUFF
+  * GRID FADERS: 4X PROB, CLK DIV
+
+* OUT
+  * I2C: JUST FRIENDS CONTROL
+  * TR 1-4: CLK (GENERATIVE)
+  * CV 1-4: V/OCT 
+  * TR 5-8: CLK (DETERMINISTIC)
+  * CV 5-8: 2V, 5V, 2V, 5V (SM, RN
+
+* NOTES
+  * J TRACK 4 CURR TRACKER ENTRY
+  * K SCRIPT 4 COUNTER
+  * X - GRID TRACK VIS X OFFSET
+  * Y - SMOOTH MOD (OUT 6)
+  * A/B/C/D - CURR NOTE, TRK 1-4
+  * T - CLOCK PERIOD
+  * R - 1-7, RANDOM SCALE DEGREE
+  * O - 0-3, CYCLING CHORD COMPON
+  * PARAM - OCTAVE SHIFT
+  * Q.I_0 - CHORD COMPONENT (OUT 1
+  * DRUNK - SMOOTH MOD (OUT 5)
+  
+```
+grid layout
+  button ( mutate note),  fader (trigger probability)  track 1
+  button (shuffle notes), fader (clock division)       track 1
+  ...
+  track n
+```
+  
 ## dual-track-stereo-nb-machine (29)
 Repeating generative patterns based on N.BX feature.
 Dual generative tracker with dual stereo envelope pairs.

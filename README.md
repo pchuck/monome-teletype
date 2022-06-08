@@ -3,7 +3,12 @@ various scenes for the monome teletype
 
 # scenes
 
-## gen-flow-friends (31)
+## gen-flow-jf-f8r (31)
+Generative machine to drive Just Friends over I2C.
+Utilizes the tracker and grid to control melody and randomization.
+Also uses F8R to control parameters.
+
+## gen-flow-friends (30)
 Generative machine to drive Just Friends over I2C.
 Utilizes the tracker and grid to control melody and randomization.
 

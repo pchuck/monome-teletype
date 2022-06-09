@@ -3,7 +3,24 @@ various scenes for the monome teletype
 
 # scenes
 
-## gen-flow-jf-f8r (31)
+## chord-seq-grid-crow-jf-f8r (4)
+Chord sequencer controlled by grid.
+Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
+F8R or XVI optionally controls parameters.
+
+## chord-seq-grid-crow-jf (3)
+Chord sequencer controlled by F8R or XVI.
+Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
+
+## chord-seq-f8r-crow-jf (2)
+Chord sequencer controlled by grid.
+Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
+
+## chord-seq-grid-f8r-exp (1)
+Experimental chord sequencer controlled by either grid or f8r.
+Code change required to toggle grid/F8R (or XVI).
+
+## gen-flow-jf-f8rfriends (31)
 Generative machine to drive Just Friends over I2C.
 Utilizes the tracker and grid to control melody and randomization.
 Also uses F8R to control parameters.

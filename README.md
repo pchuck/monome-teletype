@@ -3,22 +3,39 @@ various scenes for the monome teletype
 
 # scenes
 
-## chord-seq-grid-crow-jf-f8r (4)
-Chord sequencer controlled by grid.
-Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
+## quad-chord-seq-grid-f8r-jf-crow-ansible (6)
+Quad independent chord sequencer controlled by grid.
+Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
+Trigger and voltage variations on ansible
+F8R or XVI optionally controls clock division, envelope and metronome.
+
+## quad-chord-grid-f8r-jf(5)
+Quad independent chord sequencer controlled by grid
+Melody out on CV1-4 and Just Friends via I2C.
+(same as 5, but simplified; limited f8r controls, no crow or ansible)
+F8R or XVI optionally controls clock division and metronome.
+
+## chord-seq-gen-grid-f8r-jf-crow (4)
+Single chord sequence, with three derived/generative sequences.
+Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
 F8R or XVI optionally controls parameters.
+Generative sequence modification (fader 1).
+Generative triggering (fader 2).
+Tempo controls (fader 8).
 
 ## chord-seq-grid-crow-jf (3)
 Chord sequencer controlled by F8R or XVI.
 Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
+(same as #2, but with grid. obsoleted by 4/5/6)
 
 ## chord-seq-f8r-crow-jf (2)
-Chord sequencer controlled by grid.
+Chord sequencer controlled by F8R.
 Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
+(obsoleted by 4/5/6)
 
-## chord-seq-grid-f8r-exp (1)
-Experimental chord sequencer controlled by either grid or f8r.
-Code change required to toggle grid/F8R (or XVI).
+## blank (1)
+
+## blank (0)
 
 ## gen-flow-jf-f8rfriends (31)
 Generative machine to drive Just Friends over I2C.

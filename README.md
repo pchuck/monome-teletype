@@ -7,15 +7,13 @@ various scenes for the monome teletype
 Quad independent chord sequencer controlled by grid.
 Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
 Trigger and voltage variations on ansible
-F8R or XVI controls clock division, pattern length and metronome.
-NOTE: requires F8R as (default) fader value of 0 is pattern length
+(optional) F8R or XVI controls clock division, pattern length and metronome.
 
 ## quad-chord-seq-grid-f8r-jf-crow-ansible (6)
 Quad independent chord sequencer controlled by grid.
 Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
 Trigger and voltage variations on ansible
-F8R or XVI optionally controls clock division, envelope and metronome.
-NOTE: does not require F8R; default non-fader values produce reasonable results.
+(optional) F8R or XVI controls clock division, envelope and metronome.
 
 ## quad-chord-grid-f8r-jf(5)
 Quad independent chord sequencer controlled by grid

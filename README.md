@@ -3,6 +3,10 @@ various scenes for the monome teletype
 
 # scenes
 
+## oct-trig-seq-grid-f8r (8)
+Oct independent trig sequencer controlled by grid.
+(optional) F8R or XVI controls pattern lengths.
+
 ## quad-chord-seq-grid-f8r-jf-crow-ansible-final (7)
 Quad independent chord sequencer controlled by grid.
 Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.

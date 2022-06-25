@@ -14,11 +14,11 @@ A/B/C/D/X/Y/Z/T: CURR STEP
 J: SEQ LENGTH
 K: UNUSED
 R: RANDOM CV
+TRACKER: CV/NOTES FOR 1-4
 
 
 
 #1
-L 0 128: G.BTN.L I 1
 A WRAP + 1 A 0 FADER $
 G.BTN.L + A 0 8
 IF EZ G.BTN.V A: BREAK
@@ -40,7 +40,7 @@ P.N 2; CV $ N P.NEXT; TR.P $
 D WRAP + 1 D 0 FADER $
 G.BTN.L + D 48 8
 IF EZ G.BTN.V + 48 D: BREAK
-P.N 3; CV $ V P.NEXT; TR.P $
+P.N 3; CV $ N P.NEXT; TR.P $
 
 #5
 X WRAP + 1 X 0 FADER $
@@ -68,6 +68,7 @@ CV $ V R; TR.P $
 
 #M
 M + 128 << 2 PRM
+L 0 128: G.BTN.L I 1
 L 1 8: $ I
 L 1 4: CV + 4 I RND V I
 

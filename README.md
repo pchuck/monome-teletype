@@ -7,6 +7,13 @@ various scenes for the monome teletype
 Oct independent trig sequencer controlled by grid.
 (optional) F8R or XVI controls pattern lengths.
 
+## quad-chord-seq-grid-16n-jf-crow-ansible-final (2)
+Quad independent chord sequencer controlled by grid.
+Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
+Trigger and voltage variations on ansible
+(optional) 16n controls clock division, pattern length and metronome.
+same as (7), with 16n support and slightly better envelopes.
+
 ## quad-chord-seq-grid-f8r-jf-crow-ansible-final (7)
 Quad independent chord sequencer controlled by grid.
 Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
@@ -19,10 +26,10 @@ Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
 Trigger and voltage variations on ansible
 (optional) F8R or XVI controls clock division, envelope and metronome.
 
-## quad-chord-grid-f8r-jf(5)
+## quad-chord-grid-f8r-jf (5)
 Quad independent chord sequencer controlled by grid
 Melody out on CV1-4 and Just Friends via I2C.
-(same as 5, but simplified; limited f8r controls, no crow or ansible)
+(same as 6, but simplified; limited f8r controls, no crow or ansible)
 F8R or XVI optionally controls clock division and metronome.
 
 ## chord-seq-gen-grid-f8r-jf-crow (4)
@@ -38,7 +45,7 @@ Chord sequencer controlled by F8R or XVI.
 Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
 (same as #2, but with grid. obsoleted by 4/5/6)
 
-## chord-seq-f8r-crow-jf (2)
+## chord-seq-f8r-crow-jf (was 2)
 Chord sequencer controlled by F8R.
 Melody out on CV1-3 and Just Friends via I2C. Envelopes via Crow.
 (obsoleted by 4/5/6)

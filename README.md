@@ -3,19 +3,18 @@ various scenes for the monome teletype
 
 # scenes
 
-## 16n-sequencer (was 9)
-basic 16n dual sequencer.
-sequence length controlled by init, x and y.
-a and d are attack and decay. decay controlled by param.
-envelopes on crow (optional)
-V/O on JF (optional) and CV 1/2
-note: PoC/demo. in practice, grid works better for defining sequences,
-and faders better for parameters
+## blank (9)
 
 ## oct-trig-seq-grid-f8r (8)
 Oct independent trig sequencer controlled by grid.
 (optional) F8R or XVI controls pattern lengths.
 param controls tempo.
+
+## blank (7)
+
+## blank (6)
+
+## blank (5)
 
 ## chord-seq-gen-grid-f8r-jf-crow (4)
 Single chord sequence, with three derived/generative sequences.
@@ -36,11 +35,18 @@ F8R/16n controls clock division, pattern length and metronome (optional).
 crow 1: 16n controlled a/d envelope
 crow 2: metronome adjusted a/d envelope
 
-## blank (7)
+## blank (0)
 
-## blank (6)
+--
 
-## blank (5)
+## 16n-sequencer (was 9)
+basic 16n dual sequencer.
+sequence length controlled by init, x and y.
+a and d are attack and decay. decay controlled by param.
+envelopes on crow (optional)
+V/O on JF (optional) and CV 1/2
+note: PoC/demo. in practice, grid works better for defining sequences,
+and faders better for parameters
 
 ## quad-chord-seq-grid-f8r-jf-crow-ansible-final (was 7)
 Quad independent chord sequencer controlled by grid.

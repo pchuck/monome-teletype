@@ -29,6 +29,8 @@ clone of (2) for experimentation
 slight optimizations and variations:
 1st track - shifts up or down one octave every four cycles
 2nd track - randomizes one note every four cycles
+F8R settings - 1:  0%,  2: 40%, 3: 0%, 4: 50%, 5: 60%, 6: 70%, 7: 50%, 8: 0%
+              10: 40%, 16: 40%
 
 ## quad-chord-seq-grid-16n-jf-crow-ansible-final (2)
 Quad independent chord sequencer controlled by grid.

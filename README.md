@@ -26,9 +26,9 @@ Tempo controls (fader 8).
 
 ## quad-chord-seq-grid-16n-jf-crow-ansible-exp (3)
 clone of (2) for experimentation
-slight optimizations
-1st track - periodically shifts octave
-2nd track - periodically randomizes a note
+slight optimizations and variations:
+1st track - shifts up or down one octave every four cycles
+2nd track - randomizes one note every four cycles
 
 ## quad-chord-seq-grid-16n-jf-crow-ansible-final (2)
 Quad independent chord sequencer controlled by grid.

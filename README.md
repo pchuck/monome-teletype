@@ -16,13 +16,11 @@ param controls tempo.
 
 ## blank (5)
 
-## chord-seq-gen-grid-f8r-jf-crow (4)
-Single chord sequence, with three derived/generative sequences.
-Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
+## dual-chord-seq-grid-16n-jf-ansible-w (4)
+Dual chord sequencer
+Melody out on CV1-2 and Just Friends via I2C. 
 F8R or XVI optionally controls parameters.
-Generative sequence modification (fader 1).
-Generative triggering (fader 2).
-Tempo controls (fader 8).
+Looping (reverse and variable speed) on W/ 
 
 ## quad-chord-seq-grid-16n-jf-crow-ansible-exp (3)
 clone of (2) for experimentation
@@ -43,6 +41,14 @@ crow 2: metronome adjusted a/d envelope
 ## blank (0)
 
 --
+
+## chord-seq-gen-grid-f8r-jf-crow (was 4)
+Single chord sequence, with three derived/generative sequences.
+Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
+F8R or XVI optionally controls parameters.
+Generative sequence modification (fader 1).
+Generative triggering (fader 2).
+Tempo controls (fader 8).
 
 ## 16n-sequencer (was 9)
 basic 16n dual sequencer.

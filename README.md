@@ -16,13 +16,13 @@ param controls tempo.
 
 ## blank (5)
 
-## dual-chord-seq-grid-16n-jf-ansible-w (4)
-Dual chord sequencer
-Melody out on CV1-2 and Just Friends via I2C. 
+## dual-chord-seq-grid-16n-jf-ansible-w (4) *
+Grid-based dual chord sequencer
+Melody out on CV1-2 and Just Friends via I2C.
 F8R or XVI optionally controls parameters.
-Looping (reverse and variable speed) on W/ 
+Looping (reverse and variable speed) on W/.
 
-## quad-chord-seq-grid-16n-jf-crow-ansible-exp (3)
+## quad-chord-seq-grid-16n-jf-crow-ansible-exp (3) * 
 clone of (2) for experimentation
 slight optimizations and variations:
 1st track - shifts up or down one octave every four cycles
@@ -30,7 +30,7 @@ slight optimizations and variations:
 F8R settings - 1:  0%,  2: 40%, 3: 0%, 4: 50%, 5: 60%, 6: 70%, 7: 50%, 8: 0%
               10: 40%, 16: 40%
 
-## quad-chord-seq-grid-16n-jf-crow-ansible-final (2)
+## quad-chord-seq-grid-16n-jf-crow-ansible-final (2) *
 Quad independent chord sequencer controlled by grid.
 Melody out on CV1-4 and Just Friends via I2C. Envelopes via Crow.
 Trigger and voltage variations on ansible.

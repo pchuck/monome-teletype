@@ -108,7 +108,7 @@ L 0 3: PN.I I 0
 L 1 16: FADER.SCALE I 0 8
 L 9 10: FADER.SCALE I 0 3
 L 5 8: FADER.SCALE I 15 0
-Z 3; $ 7; $ 8
+FB.S 16 0 6; Z 3; $ 7; $ 8
 
 #P
 8	8	8	8

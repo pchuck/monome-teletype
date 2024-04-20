@@ -407,9 +407,19 @@ to advance tracker patterns rhythmically.
 
 
 # installation
-To install
-* copy the desired scene scripts to a flash device
-* rename the scene scripts to tt??s.txt
-* be careful not to use a tt??s.txt that would overwrite your own scenes
-* insert the flash device into you teletype 
+
+## File -> Teletype Device
+To install one or more of the scripts to a Teletype device:
+* copy the desired scene script(s) to a flash device
+* rename the scene script(s) to ttXX.txt, where XX represents the target scene
+* insert the flash device into you teletype and reboot
 * scripts are transferred from the flash device to teletype on powerup
+* or, on newer firmwares when selecting "load" at boot
+
+## Teletype Device -> File
+To transfer a script from Teletype to file:
+* Insert the flash drive
+* scripts are transfered from the teletype to flash on powerup
+* or, on newer firmware when selecting "save" at boot
+* copy the scene script ttXXs.txt from flash and rename
+

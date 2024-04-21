@@ -10,7 +10,38 @@ Oct independent trig sequencer controlled by grid.
 (optional) F8R or XVI controls pattern lengths.
 param controls tempo.
 
-## blank (7)
+## loop-melody-dual-seq (7)
+Rewrite of dual-chord-seq-grid-16n-jf-ansible-w, with better loop control.
+
+* W/ configuration
+  *  patch trigger output 5 to w/ input 'this'
+  *  buttons: 'loop', 'play', 'record'
+  *  set engine to "tape"
+    *  press/hold record + play + loop
+    * press record
+    * hold 'down' and wait for lights to charge
+  * setup 'this' to be clock
+    * hold record
+    * insert patch cable
+    * select 'loop'
+    * confirm with 'down'
+  * w/ setup / operation
+    * clear the loop by holding 'loop' until lights off
+    * press 'play'
+    * press 'loop', the next two triggers to 'this' set the start/end
+    * press 'record' to start/stop recording
+    * use the faders as follows...
+      * use fader  9 to change speed/direction
+      * use fader 10 to intiate recording and control record strength
+      * use fader 11 to to set erase head strength
+      * use fader 12 to lower/mute the input
+
+* f8r (tape related) notes
+  *  9: tape SPEED numerator (0..3) -> 2^SPEED / denominator
+  * 10: record level (-10..120) -> *VV
+  * 11: erase level (0..100) -> *VV
+  * 12: monitor level (inverse, 100..0) -> *VV
+  * 13: tape direction (1..-1, speed denominator) -> *4
 
 ## blank (6)
 
